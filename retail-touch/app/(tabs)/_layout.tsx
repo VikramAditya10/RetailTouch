@@ -15,20 +15,47 @@ export default function TabLayout() {
         headerShown: false,
       }}>
       <Tabs.Screen
-        name="index"
+        name="products"
         options={{
-          title: 'Home',
+          title: 'Products',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
+            <TabBarIcon name={focused ? 'pricetag' : 'pricetag-outline'} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="checkout"
         options={{
-          title: 'Explore',
+          title: 'Checkout',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <TabBarIcon name={focused ? 'checkmark-circle' : 'checkmark-circle-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="calculator"
+        options={{
+          title: 'Calculator',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'calculator' : 'calculator-outline'} color={color} style={{ fontSize: 28 }} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="orders"
+        options={{
+          title: 'Orders',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'receipt' : 'receipt-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="cart"
+        options={{
+          title: 'Cart',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'cart' : 'cart-outline'} color={color} />
           ),
         }}
       />
