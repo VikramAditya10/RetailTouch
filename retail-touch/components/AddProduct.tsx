@@ -108,6 +108,7 @@ export default function AddProduct() {
     <ScrollView
       style={{
         padding: 20,
+        backgroundColor: "white",
       }}
     >
       <ProductFacia />

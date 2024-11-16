@@ -46,6 +46,7 @@ export default function Calculator() {
         flexDirection: "column",
         gap: 20,
         flexGrow: 1,
+        backgroundColor: "white",
       }}
     >
       <TextInput
